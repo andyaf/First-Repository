@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise_1_Try_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button-collection" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-B8-Nm7">
+                                <rect key="frame" x="223" y="177" width="139" height="123"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYE-6t-DU0">
+                                <rect key="frame" x="43" y="566" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="hideRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5U-1c-EKN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTm-IG-mj9">
+                                <rect key="frame" x="246" y="566" width="93" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="hideBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OkV-aS-U7k"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="17438-NRJ79A" translatesAutoresizingMaskIntoConstraints="NO" id="37L-bI-I7c">
+                                <rect key="frame" x="20" y="177" width="139" height="123"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueButton" destination="Pgc-B8-Nm7" id="wiJ-G9-SxB"/>
+                        <outlet property="redButton" destination="37L-bI-I7c" id="Py7-71-Nfg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.5" y="319.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="17438-NRJ79A" width="313" height="308"/>
+        <image name="button-collection" width="229" height="230"/>
+    </resources>
+</document>
